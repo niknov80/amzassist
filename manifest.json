@@ -1,0 +1,19 @@
+{
+    "name": "AMZ Scout Assistent",
+    "version": "1.0",
+    "description": "Помошник Amazon-скаута",
+    "manifest_version": 2,
+
+    "permissions": [
+        "activeTab"
+      ],
+
+    "content_scripts": [
+        {
+          "matches": ["https://www.amazon.com/*"],
+          "css": ["style.css"],          
+          "run_at": "document_idle",
+          "js": ["content_script.js"]
+        }
+      ]
+  }
