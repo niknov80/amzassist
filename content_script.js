@@ -1,10 +1,11 @@
-let title = document.getElementById('title');
-let price = document.getElementById('price_inside_buybox');
+let title = document.getElementById('productTitle');
+let price = document.getElementById('newBuyBoxPrice');
 
 let textTitle = title.textContent;
 let textPrice = price.textContent;
 let str = textPrice.replace('$','');
 let resultPrice = str / 2;
+resultPrice.toFixed(2);
 let searchPrice = textTitle + " $1..." + resultPrice;
 
 console.log("textPrice:" + resultPrice);
